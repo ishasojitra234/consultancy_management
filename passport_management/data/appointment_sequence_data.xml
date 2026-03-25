@@ -1,0 +1,11 @@
+   <odoo>
+    <record id="seq_passport_appointment" model="ir.sequence">
+        <field name="name">Passport Appointment</field>
+        <field name="code">appointment.appointment</field>
+        <field name="prefix">PP</field>
+        <field name="padding">4</field>
+        <field name="number_next" eval="1" />
+        <field name="number_increment" eval="1" />
+        <field name="company_id" eval="False" />
+    </record>
+</odoo>

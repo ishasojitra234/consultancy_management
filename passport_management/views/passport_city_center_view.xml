@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="view_office_address_tree" model="ir.ui.view">
+		<field name="name">office.address.tree</field>
+		<field name="model">office.address</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+	<record id="view_office_address_form" model="ir.ui.view">
+		<field name="name">office.address.form</field>
+		<field name="model">office.address</field>
+		<field name="arch" type="xml">
+			<form >
+				<sheet>
+					<div class="oe_title">
+						<h1><field name="name" placeholder="Enter Name Here.." /></h1>
+					    <field name="city_id" placeholder="Select city" column_invisible="1"/>
+					</div>
+					
+                    <group>
+                    <label for="street1" string="Address"/>
+                        <div class="o_address_format">
+                            <field name="street1" placeholder="Street..." class="o_address_street"/>
+                            <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                            <field name="city_id" placeholder="City" class="o_address_city"/>
+                            <field name="state_id" class="o_address_state" placeholder="State" />
+                            <field name="pincode" placeholder="ZIP" class="o_address_zip"/>
+                            <field name="country_id" placeholder="Country" class="o_address_country" />
+                        </div>	
+                    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_office_address">
+		<field name="name">City Center</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">office.address</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				No Record Found
+			</p>
+			<p>
+				Click to add a Flavour.
+			</p>
+		</field>
+	</record>
+
+
+
+</odoo>

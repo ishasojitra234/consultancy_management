@@ -1,0 +1,324 @@
+.o_action_manager{
+    overflow: auto !important;
+    }
+    // .text_transfer_upper {
+    //     text-transform: uppercase !important;
+    // }
+    /* .o_field_widget .o_input_dropdown > input {
+        text-transform: uppercase !important;
+    } */
+    // .claim_table_view .o_data_row {
+    //     text-transform: uppercase !important;
+    // }
+    .text-tnf-capitalized {
+        text-transform: capitalize !important;
+    }
+    // .mandatory_doc .o_data_row > td:nth-child(2):empty,
+    // .mandatory_doc .o_data_row > td:nth-child(3):empty {
+    //     display: none !important;
+    // }
+    
+    // .o_field_char {
+    //     text-transform: uppercase !important;
+    // }
+    .claim_dashboard {
+    
+        letter-spacing: 0.5px;
+        .claim-container {
+            margin: 20px 30px;
+        }
+    
+        .claim-card {
+            padding: 0;
+            margin-bottom: 1.5rem;
+            border-radius: 0;
+            background: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            will-change: transform, box-shadow;
+            box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+        }
+    
+        .claim-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+    
+        .claim-card:hover {
+            transform: translateY(-2px) translateZ(0) !important;
+            box-shadow: 0 10px 10px 0 rgba(62, 57, 107, 0.12), 0 0 0 transparent !important;
+            cursor: pointer;
+        }
+    
+        .claim-card h4 {
+            font-size: 1.1rem;
+        }
+    
+        .claim-card-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        /*    Widget One
+        ---------------------------*/
+        .stat-content {
+            display: inline-block;
+            width: 59%;
+        }
+    
+        .stat-icon {
+            display: inline-block;
+        }
+    
+        .stat-widget .stat-icon {
+            vertical-align: top;
+            margin: auto;
+            width: 40%;
+            height: 87px;
+            text-align: center;
+            padding-top: 9.3%;
+            color: #000;
+            font-size: 18px;
+        }
+    
+        .stat-widget .stat-text {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 2.6rem;
+            margin-left: 1rem;
+            color: #000;
+        }
+    
+        .stat-widget .stat-digit {
+            font-size: 17px;
+            color: #000;
+            margin-left: 1rem;
+            padding-left: 26px;
+        }
+    
+        .stat-widget .stat-icon i {
+            font-size: 25px;
+            font-weight: 900;
+            display: inline-block;
+            color: #fff;
+        }
+    
+        .stat-widget {
+            background-color: white;
+            text-align: inherit !important;
+            width: 100%;
+        }
+    
+        .claim-settle, .claim-last-doc {
+            margin-top: 1.5%;
+        }
+    
+        /* dms new */
+        .claim-settle .stat-icon {
+            background: #21ad90;
+        }
+    
+        .claim-last-doc .stat-icon {
+            background: #c94ec0;
+        }
+        .claim_dashboard_title {
+            display:flex;
+            width: 600px;
+            place-content: space-between;
+            justify-content: space-between;
+            line-height: 30px;
+        }
+        .claim_dashboard_title span {
+            font-size: 16px;
+            font-family: 'Gibson-Regular';
+            font-weight: 600;
+        }
+        #policySelection {
+            width:260px;
+        }
+        .claim-rejected .stat-icon {
+            background: #fd5d5d;
+        }
+        .stat-widget .center_align {
+            margin-top: 2rem;
+        }
+        .stat-widget .amt_text {
+            padding-top: 5.6%;
+        }
+    
+    }
+    .o_form_view .upload_feedback {
+      padding-top: 25px;
+    }
+    .o_form_view .upload_area_section table {
+      width: 100% !important;
+      text-align: center;
+    }
+    .o_form_view .upload_excel_section > tbody > tr > td {
+        width: 80% !important;
+    }
+    .o_form_view .upload_feedback .o_row .excel_file > input {
+        width: 300px;
+    }
+    .dates_details label.o_form_label, .signature_details label.o_form_label {
+        min-width: 160px;
+    }
+    td.o_data_cell.o_field_cell.o_readonly_modifier > .outcome_dots,
+    td.o_data_cell.o_field_cell.o_readonly_modifier > div > .outcome_dots{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block !important;
+        vertical-align: middle;
+    }
+    .custom-radio-container .o_radio_item {
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+    }
+    .custom-radio-container .o_radio_item {
+        width: 32%;
+    }
+    .custom-radio-container .o_field_radio {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+    }
+    .custom-radio-container .o_radio_item .o_form_label{
+        padding-left: 10px;
+    }
+    .time-slot-radio-container .o_radio_item {
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+    }
+    .time-slot-radio-container {
+        display: flex;
+    }
+    .time-slot-radio-container .o_radio_item {
+        width: 80px;
+    }
+    .time-slot-radio-container .o_field_char {
+         width: 16%;
+    }
+    .time-slot-radio-container .o_field_radio {
+        width: 60%;
+        display: contents !important;
+    }
+    .time-slot-radio-container .o_radio_item .o_form_label{
+        padding-left: 5px;
+    }
+    .o_search_icon_container {
+        display: flex;
+        align-items: center;
+    }
+    .o_search_icon {
+        margin-left: 5px;
+    }
+    .dot_icon {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .pending_dots {
+       background-color: orange;
+    }
+    .downloaded_dots {
+       background-color: black;
+    }
+    .accepted_dots {
+       background-color: green;
+    }
+    .rejected_dots {
+       background-color: red;
+    }
+    .scheduled_dots {
+       background-color: gray;
+    }
+    .compliance_group .o_horizontal_separator {
+        color: gray !important;
+        font-weight: 500 !important;
+        font-size: 14.5px !important;
+    }
+     hide add new row in many2many field
+     .flow_history_table .o_field_x2many_list_row_add, .flow_history_table .o_list_record_remove {
+         display: none !important;
+    }
+    .state_circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 3px;
+    }
+    .cmp_block {
+        font-size: 15px;
+        color: #000;
+    }
+    .cmp_lnd_block {
+        margin-top: 8px;
+    }
+    .text_grey {
+        color: #a1a1a1 !important;
+        font-size: 13px;
+    }
+    .o_switch_company_menu .dropdown-menu.dropdown-menu-right.show {
+        right: auto;
+        min-width: 150px;
+    }
+    
+    .dropdown-item:has(.text_grey) {
+        pointer-events: none;
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .o_form_view .o_group .fiscal_section_block {
+            margin-top: 5px;
+        }
+        .claim_dashboard #policySelection, .reserve_dashboard #policySelection {
+            width:60%;
+        }
+        .claim_dashboard .claim_dashboard_title, .reserve_dashboard .claim_dashboard_title {
+            width:65%;
+        }
+        .claim_dashboard .stat-widget {
+            display: flex;
+        }
+        .claim_dashboard {
+            min-width: 900px;
+            margin-left: 90px;
+        }
+        .claim_dashboard .stat-widget .stat-text {
+            margin-top: 1.1rem;
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        .o_form_view .o_group .fiscal_section_block {
+            margin-top: 5px;
+        }
+        .claim_dashboard #policySelection, .reserve_dashboard #policySelection {
+            width:75%;
+        }
+        .claim_dashboard .claim_dashboard_title, .reserve_dashboard .claim_dashboard_title {
+            width:100%;
+        }
+        .upload_feedback div:nth-child(1) {
+            margin-left: 1px !important;
+            text-align-last: center !important;
+        }
+        .upload_feedback label {
+          text-align-last: center !important;
+        }
+    }
+    @media (max-width: 576px) {
+        .upload_feedback label {
+          width:150px !important;
+        }
+        .upload_feedback .excel_file {
+          place-content: center;
+          justify-content: center;
+        }
+    }
+    

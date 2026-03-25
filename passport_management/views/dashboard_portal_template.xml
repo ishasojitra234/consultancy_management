@@ -1,0 +1,87 @@
+<odoo>
+    <template id="dashboard_menu_portal_view">
+        <t t-call="portal.portal_layout">
+            <thead>
+                <center>
+                    <span>
+                        <h2 style="color: #002D72; text-align: center; margin-bottom: 20px;">Dashboard</h2>
+                    </span>
+                </center>
+            </thead>
+            <tbody>
+                <section>
+                    <div style="padding: 30px;">
+                        <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+                            <!-- Draft -->
+                            <a t-attf-href="/draft/appointment" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="draft_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>Draft</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Confirm -->
+                            <a t-attf-href="/confirm/appointment" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="confirm_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>Confirm</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+                            <!-- Open In Verification -->
+                             <a t-attf-href="/process/appointment" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="in_process_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>In Process</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Approved -->
+                            <a t-attf-href="/get/appointment" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="get_appoitment_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>Get Appoitnment</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a t-attf-href="/office_visit/appointment" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="office_visit_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>Office Visit</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a t-attf-href="/appointment/form" >
+                                <div style="width: 400px; margin: 15px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); display: flex;">
+                                    <div style="background-color: #002D72; color: white; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; padding: 30px;">
+                                        <span t-out="police_verification_count"></span>
+                                    </div>
+                                    <div style="background-color: white; color: #000; flex: 2; display: flex; align-items: center; padding-left: 30px; font-size: 15px; font-weight: bold; font-family: 'Roboto', sans-serif;">
+                                        <span>Police Verification</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </tbody>
+        </t>
+    </template>
+</odoo>

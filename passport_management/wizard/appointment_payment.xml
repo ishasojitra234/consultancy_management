@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="view_appointment_payment_form" model="ir.ui.view">
+        <field name="name">appointment.payment.wizard.form</field>
+        <field name="model">appointment.payment.wizard</field>
+        <field name="arch" type="xml">
+            <form string="My Wizard">
+                <group>
+                    <field name="appointment_id" />
+                    <field name="amount"/>
+                    <field name="journal_id" domain="[('type', 'in', ['cash', 'bank'])]" />
+                </group>
+                <footer>
+                    <button string="payment" type="object" name="action_create_payment" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_appointment_payment" model="ir.actions.act_window">
+        <field name="name">Appointment Payment</field>
+        <field name="res_model">appointment.payment.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

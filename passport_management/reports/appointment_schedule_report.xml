@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_appointment_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="ap">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <style>
+                            .appointment-container {
+                                margin-top: 20px;
+                                background-color: #fff;
+                                padding: 20px;
+                                border-radius: 8px;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .appointment-header {
+                                color: #002D72;
+                                text-align: center;
+                                margin-bottom: 20px;
+                                font-size: 22px;
+                            }
+
+                            .details-container {
+                                margin-bottom: 20px;
+                            }
+
+                            .section-heading {
+                                color: #002D72;
+                                margin-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+                            .field-row {
+                                margin-bottom: 15px;
+                                display: flex; /* Use flexbox to align items */
+                                align-items: center; /* Vertically center the items */
+                                justify-content: space-between; /* Make sure the label and value are spread out */
+                            }
+
+                            .field-label {
+                                font-weight: bold;
+                                font-size: 16px;
+                                color: #444;
+                                flex: 0 0 30%; /* Fixed width for label */
+                                margin-right: 10px; /* Add some space between label and value */
+                            }
+
+                            .field-value {
+                                font-size: 16px;
+                                color: #000;
+                                flex: 1; /* Make the value take up the remaining space */
+                            }
+
+                            .table-style {
+                                margin-top: 20px;
+                                width: 100%;
+                                border-collapse: collapse;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .table-style th,
+                            .table-style td {
+                                border: 1px solid #002D72;
+                                padding: 8px;
+                                text-align: right;
+                            }
+
+                            .table-style th {
+                                background-color: #002D72;
+                                color: white;
+                            }
+
+                            .table-style tr:nth-child(even) {
+                                background-color: #f9f9f9;
+                            }
+                        </style>
+
+
+                        <div class="appointment-container">
+                            <h2 class="appointment-header">Appointment Report</h2>
+
+                            <!-- Personal Information Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Personal Information</h3>
+                                <div class="field-row">
+                                    <div class="field-label">First Name:</div>
+                                    <div class="field-value"><span t-field="ap.first_name" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Last Name:</div>
+                                    <div class="field-value"><span t-field="ap.last_name" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Gender:</div>
+                                    <div class="field-value"><span t-field="ap.gender" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Date of Birth:</div>
+                                    <div class="field-value"><span t-field="ap.date_of_birth" /></div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Information Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Contact Information</h3>
+                                <div class="field-row">
+                                    <div class="field-label">Email:</div>
+                                    <div class="field-value"><span t-field="ap.email" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Phone:</div>
+                                    <div class="field-value"><span t-field="ap.phone" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Mobile:</div>
+                                    <div class="field-value"><span t-field="ap.mobile" /></div>
+                                </div>
+                            </div>
+
+                            <!-- Address Information Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Address Details</h3>
+                                <div class="field-row">
+                                    <div class="field-label">Street:</div>
+                                    <div class="field-value"><span t-field="ap.street1" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">City:</div>
+                                    <div class="field-value"><span t-field="ap.city_id" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">State:</div>
+                                    <div class="field-value"><span t-field="ap.state_id.name" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Country:</div>
+                                    <div class="field-value"><span t-field="ap.country_id.name" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Postal Code:</div>
+                                    <div class="field-value"><span t-field="ap.pincode" /></div>
+                                </div>
+                            </div>
+
+                            <!-- Identification Information Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Identification</h3>
+                                <div class="field-row">
+                                    <div class="field-label">Aadhar Number:</div>
+                                    <div class="field-value"><span t-field="ap.aadhar_number" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">PAN Number:</div>
+                                    <div class="field-value"><span t-field="ap.pan_number" /></div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment Details Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Appointment Details</h3>
+                                <div class="field-row">
+                                    <div class="field-label">Booking Date:</div>
+                                    <div class="field-value"><span t-field="ap.booking_date" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Service:</div>
+                                    <div class="field-value"><span t-field="ap.service_master_id.name" /></div>
+                                </div>
+                            </div>
+
+                            <!-- Payment Details Section -->
+                            <div class="details-container">
+                                <h3 class="section-heading">Payment Details</h3>
+                                <div class="field-row">
+                                    <div class="field-label">Paid Amount:</div>
+                                    <div class="field-value"><span t-field="ap.paid_amount" /></div>
+                                </div>
+                                <div class="field-row">
+                                    <div class="field-label">Due Amount:</div>
+                                    <div class="field-value"><span t-field="ap.due_amount" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

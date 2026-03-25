@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_passport_root" name="Passport Management" sequence="1"/>
+
+    <!-- <menuitem id="menu_passport_customer" name="Customer" parent="menu_passport_root" action="action_res_partner_passport" sequence="1" /> -->
+
+    <menuitem id="menu_passport_appointment" name="Passport Appointment" parent="menu_passport_root" action="action_passport_appointment" sequence="2" />
+   
+    <menuitem id="menu_passport_configuration" name="Configuration" parent="menu_passport_root" sequence="10" />
+
+    <!-- <menuitem id="service_master_menu" name="Service" parent="menu_passport_configuration" action="action_service_master" sequence="1"/> -->
+
+    <!-- <menuitem id="service_type_menu" name="Service Type" parent="menu_passport_configuration" action="action_service_type" sequence="2"/> -->
+
+    <menuitem id="service_document_menu" name="Documents" parent="menu_passport_configuration" action="action_document_type" sequence="3"/>
+
+    <menuitem id="service_city_menu" name="City" parent="menu_passport_configuration" action="action_passport_city" sequence="4"/>
+
+    <menuitem id="service_city_center_menu" name="City Center" parent="menu_passport_configuration" action="action_office_address" sequence="5"/>
+
+</odoo>

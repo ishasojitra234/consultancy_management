@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="view_service_master_tree" model="ir.ui.view">
+		<field name="name">service.master.tree</field>
+		<field name="model">service.master</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+	<record id="view_service_master_form" model="ir.ui.view">
+		<field name="name">service.master.form</field>
+		<field name="model">service.master</field>
+		<field name="arch" type="xml">
+			<form >
+				<sheet>
+					<div>
+						<field name="website_image" widget="image" class="oe_avatar"/>
+					</div>
+					<div class="oe_title">
+						<h1><field name="name" placeholder="Enter Name Here.." /></h1>
+					</div>
+					<group string="Service Type"/>
+					<field name="type_ids" widget="many2many_tags" placeholder="Select Service Type" />
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_service_master">
+		<field name="name">Service</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">service.master</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				No Record Found
+			</p>
+			<p>
+				Click to add a Flavour.
+			</p>
+		</field>
+	</record>
+
+
+
+</odoo>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- Service Type -->
+        <record id="service_type_new" model="service.type">
+            <field name="name">New</field>
+        </record>
+        <record id="service_type_renew" model="service.type">
+            <field name="name">Re-New</field>
+        </record>
+        <!-- <record id="service_type_changes" model="service.type">
+            <field name="name">Modify</field>
+        </record> -->
+
+        <!-- Services -->
+        <record id="product_type_passport" model="service.master">
+            <field name="name">Passport</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_pancard" model="service.master">
+            <field name="name">Pan Card</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_aadharcard" model="service.master">
+            <field name="name">Aadhar Card</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_voterid" model="service.master">
+            <field name="name">Voter Id</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_aayushmancard" model="service.master">
+            <field name="name">Aayushman Card</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_rationcard" model="service.master">
+            <field name="name">Ration Card</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_license" model="service.master">
+            <field name="name">Driving License</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_incomecertificate" model="service.master">
+            <field name="name">Income Certificate</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+        <record id="product_type_pcc" model="service.master">
+            <field name="name">Police Clearance Certificate</field>
+            <field name="type_ids" eval="[(6, 0, [ref('service_type_new'), ref('service_type_renew')])]" />
+        </record>
+
+    </data>
+</odoo>

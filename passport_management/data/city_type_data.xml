@@ -1,0 +1,2437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- City Type -->
+        <record id="city_surat" model="passport.city">
+            <field name="name">Surat</field>
+        </record>
+        <record id="city_ahmedabad" model="passport.city">
+            <field name="name">Ahmedabad</field>
+        </record>
+        <record id="city_amritsar" model="passport.city">
+            <field name="name">Amritsar</field>
+        </record>
+        <record id="city_bareilly" model="passport.city">
+            <field name="name">Bareilly</field>
+        </record>
+        <record id="city_bengaluru" model="passport.city">
+            <field name="name">Bengaluru</field>
+        </record>
+        <record id="city_bhopal" model="passport.city">
+            <field name="name">Bhopal</field>
+        </record>
+        <record id="city_bhubaneswar" model="passport.city">
+            <field name="name">Bhubaneswar</field>
+        </record>
+        <record id="city_chandigarh" model="passport.city">
+            <field name="name">Chandigarh</field>
+        </record>
+        <record id="city_chennai" model="passport.city">
+            <field name="name">Chennai</field>
+        </record>
+        <record id="city_cochin" model="passport.city">
+            <field name="name">Cochin</field>
+        </record>
+        <record id="city_coimbatore" model="passport.city">
+            <field name="name">Coimbatore</field>
+        </record>
+        <record id="city_dehradun" model="passport.city">
+            <field name="name">Dehradun</field>
+        </record>
+        <record id="city_delhi" model="passport.city">
+            <field name="name">Delhi</field>
+        </record>
+        <record id="city_ghaziabad" model="passport.city">
+            <field name="name">Ghaziabad</field>
+        </record>
+        <record id="city_goa" model="passport.city">
+            <field name="name">Goa</field>
+        </record>
+        <record id="city_guwahati" model="passport.city">
+            <field name="name">Guwahati</field>
+        </record>
+        <record id="city_hyderabad" model="passport.city">
+            <field name="name">Hyderabad</field>
+        </record>
+        <record id="city_jaipur" model="passport.city">
+            <field name="name">Jaipur</field>
+        </record>
+        <record id="city_jalandhar" model="passport.city">
+            <field name="name">Jalandhar</field>
+        </record>
+        <record id="city_jammu" model="passport.city">
+            <field name="name">Jammu</field>
+        </record>
+        <record id="city_kolkata" model="passport.city">
+            <field name="name">Kolkata</field>
+        </record>
+        <record id="city_kota" model="passport.city">
+            <field name="name">Kota</field>
+        </record>
+        <record id="city_kozhikode" model="passport.city">
+            <field name="name">Kozhikode</field>
+        </record>
+        <record id="city_lucknow" model="passport.city">
+            <field name="name">Lucknow</field>
+        </record>
+        <record id="city_madurai" model="passport.city">
+            <field name="name">Madurai</field>
+        </record>
+        <record id="city_mumbai" model="passport.city">
+            <field name="name">Mumbai</field>
+        </record>
+        <record id="city_nagpur" model="passport.city">
+            <field name="name">Nagpur</field>
+        </record>
+        <record id="city_patna" model="passport.city">
+            <field name="name">Patna</field>
+        </record>
+        <record id="city_pune" model="passport.city">
+            <field name="name">Pune</field>
+        </record>
+        <record id="city_raipur" model="passport.city">
+            <field name="name">Raipur</field>
+        </record>
+        <record id="city_ranchi" model="passport.city">
+            <field name="name">Ranchi</field>
+        </record>
+        <record id="city_shimla" model="passport.city">
+            <field name="name">Shimla</field>
+        </record>
+        <record id="city_srinagar" model="passport.city">
+            <field name="name">Srinagar</field>
+        </record>
+        <record id="city_tiruchirappalli" model="passport.city">
+            <field name="name">Tiruchirappalli</field>
+        </record>
+        <record id="city_trivandrum" model="passport.city">
+            <field name="name">Trivandrum</field>
+        </record>
+        <record id="city_vijayawada" model="passport.city">
+            <field name="name">Vijayawada</field>
+        </record>
+        <record id="city_visakhapatnam" model="passport.city">
+            <field name="name">Visakhapatnam</field>
+        </record>
+<!-- City Center Type -->
+        <!-- Surat Center -->
+        <record id="center_type_PSK_Surat" model="office.address">
+            <field name="name">PSK Surat</field>
+            <field name="city_id" ref="city_surat"/>
+        </record>
+        <record id="center_type_RPO_Surat_Van1_GJ01KT7329" model="office.address">
+            <field name="name">RPO Surat Van-1 GJ01KT7329</field>
+            <field name="city_id" ref="city_surat"/>
+        </record>
+        <record id="center_type_POPSK_Bardoli" model="office.address">
+            <field name="name">POPSK Bardoli</field>
+            <field name="city_id" ref="city_surat" />
+        </record>
+        <record id="center_type_POPSK_Navsari" model="office.address">
+            <field name="name">POPSK Navsari</field>
+            <field name="city_id" ref="city_surat" />
+        </record>
+        <record id="center_type_POPSK_Rajpipla" model="office.address">
+            <field name="name">POPSK Rajpipla</field>
+            <field name="city_id" ref="city_surat" />
+        </record>
+        <record id="center_type_POPSK_Valsad" model="office.address">
+            <field name="name">POPSK Valsad</field>
+            <field name="city_id" ref="city_surat" />
+        </record>
+
+    <!-- Ahmedabad Center -->
+        <record id="center_type_PSK_mithakali_ahmedabad" model="office.address">
+            <field name="name">PSK Mithakali Ahmedabad</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_PSK_Rajkot" model="office.address">
+            <field name="name">PSK Rajkot</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_PSK_Vadodara" model="office.address">
+            <field name="name">PSK Vadodara</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_PSK_Vijay_Cross_Road_Ahmedabad" model="office.address">
+            <field name="name">PSK Vijay Cross Road Ahmedabad</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_RPO_Ahmedabad" model="office.address">
+            <field name="name">RPO Ahmedabad</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_RPO_Ahmedabad_Van1_GJ01KT7320" model="office.address">
+            <field name="name">RPO Ahmedabad Van-1 GJ01KT7320</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Amreli" model="office.address">
+            <field name="name">POPSK Amreli</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Anand" model="office.address">
+            <field name="name">POPSK Anand</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Bharuch" model="office.address">
+            <field name="name">POPSK Bharuch</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Bhavnagar" model="office.address">
+            <field name="name">POPSK Bhavnagar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Bhuj" model="office.address">
+            <field name="name">POPSK Bhuj</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Chhota_Udaipur" model="office.address">
+            <field name="name">POPSK Chhota Udaipur</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Dahod" model="office.address">
+            <field name="name">POPSK Dahod</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Gandhinagar" model="office.address">
+            <field name="name">POPSK Gandhinagar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Godhra" model="office.address">
+            <field name="name">POPSK Godhra</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Himmatnagar" model="office.address">
+            <field name="name">POPSK Himmatnagar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Jamnagar" model="office.address">
+            <field name="name">POPSK Jamnagar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Junagadh" model="office.address">
+            <field name="name">POPSK Junagadh</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Mehsana" model="office.address">
+            <field name="name">POPSK Mehsana</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Nadiad" model="office.address">
+            <field name="name">POPSK Nadiad</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Palanpur" model="office.address">
+            <field name="name">POPSK Palanpur</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Patan" model="office.address">
+            <field name="name">POPSK Patan</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Porbandar" model="office.address">
+            <field name="name">POPSK Porbandar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Surendranagar" model="office.address">
+            <field name="name">POPSK Surendranagar</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+        <record id="center_type_POPSK_Veraval" model="office.address">
+            <field name="name">POPSK Veraval</field>
+            <field name="city_id" ref="city_ahmedabad" />
+        </record>
+    <!-- Amritsar Center -->
+        <record id="center_type_RPO_Amritsar" model="office.address">
+            <field name="name">RPO Amritsar</field>
+            <field name="city_id" ref="city_amritsar" />
+        </record>
+        <record id="center_type_POPSK_Ferozepur" model="office.address">
+            <field name="name">POPSK Ferozepur</field>
+            <field name="city_id" ref="city_amritsar" />
+        </record>
+    <!-- Bareilly Center -->
+        <record id="center_type_PSK_Bareilly" model="office.address">
+            <field name="name">PSK Bareilly</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_RPO_Bareilly" model="office.address">
+            <field name="name">RPO Bareilly</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Amroha" model="office.address">
+            <field name="name">POPSK Amroha</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Badaun" model="office.address">
+            <field name="name">POPSK Badaun</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Bijnaur" model="office.address">
+            <field name="name">POPSK Bijnaur</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Moradabad" model="office.address">
+            <field name="name">POPSK Moradabad</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Nagina" model="office.address">
+            <field name="name">POPSK Nagina</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Pilibhit" model="office.address">
+            <field name="name">POPSK Pilibhit</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Rampur" model="office.address">
+            <field name="name">POPSK Rampur</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+        <record id="center_type_POPSK_Shahjahanpur" model="office.address">
+            <field name="name">POPSK Shahjahanpur</field>
+            <field name="city_id" ref="city_bareilly" />
+        </record>
+    <!-- Bengaluru Center -->
+         <record id="center_type_PSK_Bengaluru_Lalbagh" model="office.address">
+            <field name="name">PSK Bengaluru, Lalbagh</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_PSK_Bengaluru_Sai_Arcade" model="office.address">
+            <field name="name">PSK Bengaluru, Sai Arcade</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_PSK_Hubballi_Dharwad" model="office.address">
+            <field name="name">PSK Hubballi-Dharwad</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_PSK_Mangaluru" model="office.address">
+            <field name="name">PSK Mangaluru</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_RPO_Bengaluru" model="office.address">
+            <field name="name">RPO Bengaluru</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Ankola" model="office.address">
+            <field name="name">POPSK Ankola</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Bagalkot" model="office.address">
+            <field name="name">POPSK Bagalkot</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Ballari" model="office.address">
+            <field name="name">POPSK Ballari</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Belagavi" model="office.address">
+            <field name="name">POPSK Belagavi</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Bidar" model="office.address">
+            <field name="name">POPSK Bidar</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Chamarajanagar" model="office.address">
+            <field name="name">POPSK Chamarajanagar</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Channapatna" model="office.address">
+            <field name="name">POPSK Channapatna</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Chikkaballapur" model="office.address">
+            <field name="name">POPSK Chikkaballapur</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Chikkodi" model="office.address">
+            <field name="name">POPSK Chikkodi</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Chitradurga" model="office.address">
+            <field name="name">POPSK Chitradurga</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Davangere" model="office.address">
+            <field name="name">POPSK Davangere</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Gadag" model="office.address">
+            <field name="name">POPSK Gadag</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Hassan" model="office.address">
+            <field name="name">POPSK Hassan</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Jalahalli" model="office.address">
+            <field name="name">POPSK Jalahalli</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Koppal" model="office.address">
+            <field name="name">POPSK Koppal</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Maddur" model="office.address">
+            <field name="name">POPSK Maddur</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Mysuru" model="office.address">
+            <field name="name">POPSK Mysuru</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Raichur" model="office.address">
+            <field name="name">POPSK Raichur</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Robertsonpet" model="office.address">
+            <field name="name">POPSK Robertsonpet</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Shivamogga" model="office.address">
+            <field name="name">POPSK Shivamogga</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Tumakuru" model="office.address">
+            <field name="name">POPSK Tumakuru</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Udupi" model="office.address">
+            <field name="name">POPSK Udupi</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_POPSK_Vijayapura" model="office.address">
+            <field name="name">POPSK Vijayapura</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <record id="center_type_PSLK_Kalaburagi" model="office.address">
+            <field name="name">PSLK Kalaburagi</field>
+            <field name="city_id" ref="city_bengaluru" />
+        </record>
+        <!-- Bhopal Center -->
+         <record id="center_type_PSK_Bhopal" model="office.address">
+            <field name="name">PSK Bhopal</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_RPO_Bhopal" model="office.address">
+            <field name="name">RPO Bhopal</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Balaghat" model="office.address">
+            <field name="name">POPSK Balaghat</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Betul" model="office.address">
+            <field name="name">POPSK Betul</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Chhatarpur" model="office.address">
+            <field name="name">POPSK Chhatarpur</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Chhindwara" model="office.address">
+            <field name="name">POPSK Chhindwara</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Damoh" model="office.address">
+            <field name="name">POPSK Damoh</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Dewas" model="office.address">
+            <field name="name">POPSK Dewas</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Dhar" model="office.address">
+            <field name="name">POPSK Dhar</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Guna" model="office.address">
+            <field name="name">POPSK Guna</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Gwalior" model="office.address">
+            <field name="name">POPSK Gwalior</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Hoshangabad" model="office.address">
+            <field name="name">POPSK Hoshangabad</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Jabalpur" model="office.address">
+            <field name="name">POPSK Jabalpur</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Khandwa" model="office.address">
+            <field name="name">POPSK Khandwa</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Mandsaur" model="office.address">
+            <field name="name">POPSK Mandsaur</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Ratlam" model="office.address">
+            <field name="name">POPSK Ratlam</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Rewa" model="office.address">
+            <field name="name">POPSK Rewa</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Sagar" model="office.address">
+            <field name="name">POPSK Sagar</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Satna" model="office.address">
+            <field name="name">POPSK Satna</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Seoni" model="office.address">
+            <field name="name">POPSK Seoni</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Shahdol" model="office.address">
+            <field name="name">POPSK Shahdol</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Tikamgarh" model="office.address">
+            <field name="name">POPSK Tikamgarh</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Ujjain" model="office.address">
+            <field name="name">POPSK Ujjain</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_POPSK_Vidisha" model="office.address">
+            <field name="name">POPSK Vidisha</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <record id="center_type_PSLK_Indore" model="office.address">
+            <field name="name">PSLK Indore</field>
+            <field name="city_id" ref="city_bhopal" />
+        </record>
+        <!-- Bhubaneswar Center -->
+        <record id="center_type_PSK_Bhubaneswar" model="office.address">
+            <field name="name">PSK Bhubaneswar</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_RPO_Bhubaneswar" model="office.address">
+            <field name="name">RPO Bhubaneswar</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Aska" model="office.address">
+            <field name="name">POPSK Aska</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Balasore" model="office.address">
+            <field name="name">POPSK Balasore</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Bargarh" model="office.address">
+            <field name="name">POPSK Bargarh</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Baripada" model="office.address">
+            <field name="name">POPSK Baripada</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Berhampur" model="office.address">
+            <field name="name">POPSK Berhampur</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Bhadrak" model="office.address">
+            <field name="name">POPSK Bhadrak</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Bhawanipatna" model="office.address">
+            <field name="name">POPSK Bhawanipatna</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Bolangir" model="office.address">
+            <field name="name">POPSK Bolangir</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Cuttack" model="office.address">
+            <field name="name">POPSK Cuttack</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Dhenkanal" model="office.address">
+            <field name="name">POPSK Dhenkanal</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Jagatsinghpur" model="office.address">
+            <field name="name">POPSK Jagatsinghpur</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Jajpur" model="office.address">
+            <field name="name">POPSK Jajpur</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Kendrapara" model="office.address">
+            <field name="name">POPSK Kendrapara</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Keonjhar" model="office.address">
+            <field name="name">POPSK Keonjhar</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Koraput" model="office.address">
+            <field name="name">POPSK Koraput</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Nabarangpur" model="office.address">
+            <field name="name">POPSK Nabarangpur</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Phulbani" model="office.address">
+            <field name="name">POPSK Phulbani</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Puri" model="office.address">
+            <field name="name">POPSK Puri</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Rourkela" model="office.address">
+            <field name="name">POPSK Rourkela</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <record id="center_type_POPSK_Sambalpur" model="office.address">
+            <field name="name">POPSK Sambalpur</field>
+            <field name="city_id" ref="city_bhubaneswar" />
+        </record>
+        <!-- Chandigarh Center -->
+         <record id="center_type_PSK_Ambala" model="office.address">
+            <field name="name">PSK Ambala</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_PSK_Chandigarh" model="office.address">
+            <field name="name">PSK Chandigarh</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_PSK_Ludhiana" model="office.address">
+            <field name="name">PSK Ludhiana</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_RPO_Chandigarh" model="office.address">
+            <field name="name">RPO Chandigarh</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Bassi_Pathanan" model="office.address">
+            <field name="name">POPSK Bassi Pathanan</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Bathinda" model="office.address">
+            <field name="name">POPSK Bathinda</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Bhiwani" model="office.address">
+            <field name="name">POPSK Bhiwani</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Hisar" model="office.address">
+            <field name="name">POPSK Hisar</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Kaithal" model="office.address">
+            <field name="name">POPSK Kaithal</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Karnal" model="office.address">
+            <field name="name">POPSK Karnal</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Malerkotla" model="office.address">
+            <field name="name">POPSK Malerkotla</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Patiala" model="office.address">
+            <field name="name">POPSK Patiala</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Ropar" model="office.address">
+            <field name="name">POPSK Ropar</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Sirsa" model="office.address">
+            <field name="name">POPSK Sirsa</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_Yamunanagar" model="office.address">
+            <field name="name">POPSK Yamunanagar</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <record id="center_type_POPSK_PANIPAT_Van1_T0823HR3123BG" model="office.address">
+            <field name="name">POPSK PANIPAT Van-1 T0823HR3123BG</field>
+            <field name="city_id" ref="city_chandigarh" />
+        </record>
+        <!-- Chennai Center -->
+        <record id="center_type_PSK_Aminjikarai" model="office.address">
+            <field name="name">PSK Aminjikarai</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_PSK_Saligramam" model="office.address">
+            <field name="name">PSK Saligramam</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_PSK_Tambaram" model="office.address">
+            <field name="name">PSK Tambaram</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_RPO_Chennai" model="office.address">
+            <field name="name">RPO Chennai</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Arani" model="office.address">
+            <field name="name">POPSK Arani</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Chennai_GPO" model="office.address">
+            <field name="name">POPSK Chennai GPO</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Chidambaram" model="office.address">
+            <field name="name">POPSK Chidambaram</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Cuddalore" model="office.address">
+            <field name="name">POPSK Cuddalore</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Dharmapuri" model="office.address">
+            <field name="name">POPSK Dharmapuri</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Kallakurichi" model="office.address">
+            <field name="name">POPSK Kallakurichi</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Kancheepuram" model="office.address">
+            <field name="name">POPSK Kancheepuram</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Krishnagiri" model="office.address">
+            <field name="name">POPSK Krishnagiri</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Ranipet" model="office.address">
+            <field name="name">POPSK Ranipet</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Tiruvallur" model="office.address">
+            <field name="name">POPSK Tiruvallur</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Tiruvannamalai" model="office.address">
+            <field name="name">POPSK Tiruvannamalai</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Vellore" model="office.address">
+            <field name="name">POPSK Vellore</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_POPSK_Villupuram" model="office.address">
+            <field name="name">POPSK Villupuram</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <record id="center_type_PSLK_Puducherry" model="office.address">
+            <field name="name">PSLK Puducherry</field>
+            <field name="city_id" ref="city_chennai" />
+        </record>
+        <!-- Cochin Center -->
+        <record id="center_type_PSK_Alappuzha" model="office.address">
+            <field name="name">PSK Alappuzha</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_PSK_Aluva" model="office.address">
+            <field name="name">PSK Aluva</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_PSK_Kottayam" model="office.address">
+            <field name="name">PSK Kottayam</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_PSK_Thrissur" model="office.address">
+            <field name="name">PSK Thrissur</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_PSK_Tripunithura_Cochin" model="office.address">
+            <field name="name">PSK Tripunithura, Cochin</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_RPO_Cochin" model="office.address">
+            <field name="name">RPO Cochin</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_POPSK_Chengannur" model="office.address">
+            <field name="name">POPSK Chengannur</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_POPSK_Kattappana" model="office.address">
+            <field name="name">POPSK Kattappana</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_POPSK_Kavaratti" model="office.address">
+            <field name="name">POPSK Kavaratti</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_POPSK_Nenmara" model="office.address">
+            <field name="name">POPSK Nenmara</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <record id="center_type_POPSK_Palakkad" model="office.address">
+            <field name="name">POPSK Palakkad</field>
+            <field name="city_id" ref="city_cochin" />
+        </record>
+        <!-- Coimbatore Center -->
+         <record id="center_type_PSK_Coimbatore" model="office.address">
+            <field name="name">PSK Coimbatore</field>
+            <field name="city_id" ref="city_coimbatore" />
+        </record>
+        <record id="center_type_POPSK_Coonoor" model="office.address">
+            <field name="name">POPSK Coonoor</field>
+            <field name="city_id" ref="city_coimbatore" />
+        </record>
+        <record id="center_type_POPSK_Erode" model="office.address">
+            <field name="name">POPSK Erode</field>
+            <field name="city_id" ref="city_coimbatore" />
+        </record>
+        <record id="center_type_POPSK_Rasipuram" model="office.address">
+            <field name="name">POPSK Rasipuram</field>
+            <field name="city_id" ref="city_coimbatore" />
+        </record>
+        <record id="center_type_POPSK_Salem" model="office.address">
+            <field name="name">POPSK Salem</field>
+            <field name="city_id" ref="city_coimbatore" />
+        </record>
+        <!-- Dehradun Center -->
+        <record id="center_type_PSK_Dehradun" model="office.address">
+            <field name="name">PSK Dehradun</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_RPO_Dehradun" model="office.address">
+            <field name="name">RPO Dehradun</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_RPO_Dehradun_Van1_UP32VN0577" model="office.address">
+            <field name="name">RPO Dehradun Van1-UP32VN0577</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Almora" model="office.address">
+            <field name="name">POPSK Almora</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Kathgodam" model="office.address">
+            <field name="name">POPSK Kathgodam</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Nainital" model="office.address">
+            <field name="name">POPSK Nainital</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Roorkee" model="office.address">
+            <field name="name">POPSK Roorkee</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Rudrapur" model="office.address">
+            <field name="name">POPSK Rudrapur</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_POPSK_Srinagar" model="office.address">
+            <field name="name">POPSK Srinagar</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <record id="center_type_Kotdwar_Tehsil_Van_UP32VN0577" model="office.address">
+            <field name="name">Kotdwar Tehsil Van-UP32VN0577</field>
+            <field name="city_id" ref="city_dehradun" />
+        </record>
+        <!-- Delhi Center -->
+         <record id="center_type_PSK_Defence_Colony" model="office.address">
+            <field name="name">PSK Defence Colony</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_PSK_Gurgaon" model="office.address">
+            <field name="name">PSK Gurgaon</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_PSK_Jhandewalan" model="office.address">
+            <field name="name">PSK Jhandewalan</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_PSK_Shalimar_Place" model="office.address">
+            <field name="name">PSK Shalimar Place</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_RPO_Delhi" model="office.address">
+            <field name="name">RPO Delhi</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Faridabad" model="office.address">
+            <field name="name">POPSK Faridabad</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Janak_Puri" model="office.address">
+            <field name="name">POPSK Janak Puri</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Mehrauli" model="office.address">
+            <field name="name">POPSK Mehrauli</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Narnaul" model="office.address">
+            <field name="name">POPSK Narnaul</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Nehru_Place" model="office.address">
+            <field name="name">POPSK Nehru Place</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Patparganj" model="office.address">
+            <field name="name">POPSK Patparganj</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Rohtak" model="office.address">
+            <field name="name">POPSK Rohtak</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Sonipat" model="office.address">
+            <field name="name">POPSK Sonipat</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <record id="center_type_POPSK_Yamuna_Vihar" model="office.address">
+            <field name="name">POPSK Yamuna Vihar</field>
+            <field name="city_id" ref="city_delhi" />
+        </record>
+        <!-- Ghaziabad Center -->
+        <record id="center_type_PSK_Ghaziabad" model="office.address">
+            <field name="name">PSK Ghaziabad</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_RPO_Ghaziabad" model="office.address">
+            <field name="name">RPO Ghaziabad</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Achnera" model="office.address">
+            <field name="name">POPSK Achnera</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Agra" model="office.address">
+            <field name="name">POPSK Agra</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Aligarh" model="office.address">
+            <field name="name">POPSK Aligarh</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Baghpat" model="office.address">
+            <field name="name">POPSK Baghpat</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Bulandshahr" model="office.address">
+            <field name="name">POPSK Bulandshahr</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Hathras" model="office.address">
+            <field name="name">POPSK Hathras</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Meerut" model="office.address">
+            <field name="name">POPSK Meerut</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Muzaffarnagar" model="office.address">
+            <field name="name">POPSK Muzaffarnagar</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Noida" model="office.address">
+            <field name="name">POPSK Noida</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Saharanpur" model="office.address">
+            <field name="name">POPSK Saharanpur</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <record id="center_type_POPSK_Vrindavan" model="office.address">
+            <field name="name">POPSK Vrindavan</field>
+            <field name="city_id" ref="city_ghaziabad" />
+        </record>
+        <!-- Goa Center -->
+         <record id="center_type_PSK_Panaji" model="office.address">
+            <field name="name">PSK Panaji</field>
+            <field name="city_id" ref="city_goa" />
+        </record>
+        <record id="center_type_POPSK_Margao" model="office.address">
+            <field name="name">POPSK Margao</field>
+            <field name="city_id" ref="city_goa" />
+        </record>
+        <!-- Guwahati Center -->
+        <record id="center_type_PSK_Guwahati" model="office.address">
+            <field name="name">PSK Guwahati</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Barpeta" model="office.address">
+            <field name="name">POPSK Barpeta</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Changlang" model="office.address">
+            <field name="name">POPSK Changlang</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Dhubri" model="office.address">
+            <field name="name">POPSK Dhubri</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Dibrugarh" model="office.address">
+            <field name="name">POPSK Dibrugarh</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Goalpara" model="office.address">
+            <field name="name">POPSK Goalpara</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Golaghat" model="office.address">
+            <field name="name">POPSK Golaghat</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Jorhat" model="office.address">
+            <field name="name">POPSK Jorhat</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Kakching" model="office.address">
+            <field name="name">POPSK Kakching</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Karbi_Anglong" model="office.address">
+            <field name="name">POPSK Karbi Anglong</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Karimganj" model="office.address">
+            <field name="name">POPSK Karimganj</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Khonsa" model="office.address">
+            <field name="name">POPSK Khonsa</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Kokrajhar" model="office.address">
+            <field name="name">POPSK Kokrajhar</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Mangaldoi" model="office.address">
+            <field name="name">POPSK Mangaldoi</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Nagaon" model="office.address">
+            <field name="name">POPSK Nagaon</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_North_Lakhimpur" model="office.address">
+            <field name="name">POPSK North Lakhimpur</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Silchar" model="office.address">
+            <field name="name">POPSK Silchar</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Tezpur" model="office.address">
+            <field name="name">POPSK Tezpur</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Tinsukia" model="office.address">
+            <field name="name">POPSK Tinsukia</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_POPSK_Tura" model="office.address">
+            <field name="name">POPSK Tura</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_PSLK_Aizawl" model="office.address">
+            <field name="name">PSLK Aizawl</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_PSLK_Dimapur" model="office.address">
+            <field name="name">PSLK Dimapur</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_PSLK_Imphal" model="office.address">
+            <field name="name">PSLK Imphal</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_PSLK_Itanagar" model="office.address">
+            <field name="name">PSLK Itanagar</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <record id="center_type_PSLK_Shillong" model="office.address">
+            <field name="name">PSLK Shillong</field>
+            <field name="city_id" ref="city_guwahati" />
+        </record>
+        <!-- Hyderabad Center -->
+         <record id="center_type_PSK_Ameerpet" model="office.address">
+            <field name="name">PSK Ameerpet</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_PSK_Begumpet" model="office.address">
+            <field name="name">PSK Begumpet</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_PSK_Nizamabad" model="office.address">
+            <field name="name">PSK Nizamabad</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_PSK_Toli_Chowki" model="office.address">
+            <field name="name">PSK Toli Chowki</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_RPO_Hyderabad" model="office.address">
+            <field name="name">RPO Hyderabad</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Adilabad" model="office.address">
+            <field name="name">POPSK Adilabad</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Bhongir" model="office.address">
+            <field name="name">POPSK Bhongir</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Khammam" model="office.address">
+            <field name="name">POPSK Khammam</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Mahaboobnagar" model="office.address">
+            <field name="name">POPSK Mahaboobnagar</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Mahabubabad" model="office.address">
+            <field name="name">POPSK Mahabubabad</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Mancherial" model="office.address">
+            <field name="name">POPSK Mancherial</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Medak" model="office.address">
+            <field name="name">POPSK Medak</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Medchal" model="office.address">
+            <field name="name">POPSK Medchal</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Nalgonda" model="office.address">
+            <field name="name">POPSK Nalgonda</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Siddipet" model="office.address">
+            <field name="name">POPSK Siddipet</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Vikarabad" model="office.address">
+            <field name="name">POPSK Vikarabad</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Wanaparthy" model="office.address">
+            <field name="name">POPSK Wanaparthy</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Warangal" model="office.address">
+            <field name="name">POPSK Warangal</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_PSLK_Karimnagar" model="office.address">
+            <field name="name">PSLK Karimnagar</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <record id="center_type_POPSK_Kamareddy_Van1_T1023JH1693C" model="office.address">
+            <field name="name">POPSK Kamareddy Van-1 T1023JH1693C</field>
+            <field name="city_id" ref="city_hyderabad" />
+        </record>
+        <!-- Jaipur center -->
+        <record id="center_type_PSK_Jaipur" model="office.address">
+            <field name="name">PSK Jaipur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_PSK_Jodhpur" model="office.address">
+            <field name="name">PSK Jodhpur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_PSK_Sikar" model="office.address">
+            <field name="name">PSK Sikar</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_RPO_Jaipur" model="office.address">
+            <field name="name">RPO Jaipur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_RPO_Jaipur_Van1_RJ14GQ7698" model="office.address">
+            <field name="name">RPO Jaipur Van-1 RJ14GQ7698</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Ajmer" model="office.address">
+            <field name="name">POPSK Ajmer</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Alwar" model="office.address">
+            <field name="name">POPSK Alwar</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Barmer" model="office.address">
+            <field name="name">POPSK Barmer</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Bharatpur" model="office.address">
+            <field name="name">POPSK Bharatpur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Bikaner" model="office.address">
+            <field name="name">POPSK Bikaner</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Churu" model="office.address">
+            <field name="name">POPSK Churu</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Dausa" model="office.address">
+            <field name="name">POPSK Dausa</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Dholpur" model="office.address">
+            <field name="name">POPSK Dholpur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Hanumangarh" model="office.address">
+            <field name="name">POPSK Hanumangarh</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Jaisalmer" model="office.address">
+            <field name="name">POPSK Jaisalmer</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Jhunjhunu" model="office.address">
+            <field name="name">POPSK Jhunjhunu</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Kotputli" model="office.address">
+            <field name="name">POPSK Kotputli</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Nagaur" model="office.address">
+            <field name="name">POPSK Nagaur</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Pali" model="office.address">
+            <field name="name">POPSK Pali</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Sirohi" model="office.address">
+            <field name="name">POPSK Sirohi</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <record id="center_type_POPSK_Sriganganagar" model="office.address">
+            <field name="name">POPSK Sriganganagar</field>
+            <field name="city_id" ref="city_jaipur" />
+        </record>
+        <!-- Jalandhar Center -->
+         <record id="center_type_PSK_Aman_Plaza" model="office.address">
+            <field name="name">PSK Aman Plaza</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_PSK_Eminent_Mall" model="office.address">
+            <field name="name">PSK Eminent Mall</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_PSK_Hoshiarpur" model="office.address">
+            <field name="name">PSK Hoshiarpur</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_RPO_Jalandhar" model="office.address">
+            <field name="name">RPO Jalandhar</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_POPSK_Moga" model="office.address">
+            <field name="name">POPSK Moga</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_POPSK_Pathankot" model="office.address">
+            <field name="name">POPSK Pathankot</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <record id="center_type_POPSK_Phagwara" model="office.address">
+            <field name="name">POPSK Phagwara</field>
+            <field name="city_id" ref="city_jalandhar" />
+        </record>
+        <!-- Jammu Center -->
+         <record id="center_type_PSK_Jammu" model="office.address">
+            <field name="name">PSK Jammu</field>
+            <field name="city_id" ref="city_jammu" />
+        </record>
+        <record id="center_type_RPO_Jammu_Van1_PB65BF1380" model="office.address">
+            <field name="name">RPO Jammu Van1-PB65BF1380</field>
+            <field name="city_id" ref="city_jammu" />
+        </record>
+        <record id="center_type_POPSK_Kathua" model="office.address">
+            <field name="name">POPSK Kathua</field>
+            <field name="city_id" ref="city_jammu" />
+        </record>
+        <record id="center_type_POPSK_Rajouri" model="office.address">
+            <field name="name">POPSK Rajouri</field>
+            <field name="city_id" ref="city_jammu" />
+        </record>
+        <record id="center_type_POPSK_Udhampur" model="office.address">
+            <field name="name">POPSK Udhampur</field>
+            <field name="city_id" ref="city_jammu" />
+        </record>
+        <!-- Kolkata Center -->
+        <record id="center_type_PSK_Berhampore" model="office.address">
+            <field name="name">PSK Berhampore</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_PSK_Kolkata" model="office.address">
+            <field name="name">PSK Kolkata</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_RPO_Kolkata" model="office.address">
+            <field name="name">RPO Kolkata</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Alipurduar" model="office.address">
+            <field name="name">POPSK Alipurduar</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Amta" model="office.address">
+            <field name="name">POPSK Amta</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Arambagh" model="office.address">
+            <field name="name">POPSK Arambagh</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Asansol" model="office.address">
+            <field name="name">POPSK Asansol</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Ashoknagar" model="office.address">
+            <field name="name">POPSK Ashoknagar</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Balurghat" model="office.address">
+            <field name="name">POPSK Balurghat</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Bangaon" model="office.address">
+            <field name="name">POPSK Bangaon</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Bankura" model="office.address">
+            <field name="name">POPSK Bankura</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Bardhaman" model="office.address">
+            <field name="name">POPSK Bardhaman</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Barrackpore" model="office.address">
+            <field name="name">POPSK Barrackpore</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Basirhat" model="office.address">
+            <field name="name">POPSK Basirhat</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Beadon_Street" model="office.address">
+            <field name="name">POPSK Beadon Street</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Bishnupur" model="office.address">
+            <field name="name">POPSK Bishnupur</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Bolpur" model="office.address">
+            <field name="name">POPSK Bolpur</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Canning_Town" model="office.address">
+            <field name="name">POPSK Canning Town</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Chinsurah" model="office.address">
+            <field name="name">POPSK Chinsurah</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Contai" model="office.address">
+            <field name="name">POPSK Contai</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Coochbehar" model="office.address">
+            <field name="name">POPSK Coochbehar</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Darjeeling" model="office.address">
+            <field name="name">POPSK Darjeeling</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Dharmanagar" model="office.address">
+            <field name="name">POPSK Dharmanagar</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Diamond_Harbour" model="office.address">
+            <field name="name">POPSK Diamond Harbour</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Dum_Dum" model="office.address">
+            <field name="name">POPSK Dum Dum</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Ghatal" model="office.address">
+            <field name="name">POPSK Ghatal</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Howrah" model="office.address">
+            <field name="name">POPSK Howrah</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Jadavpur" model="office.address">
+            <field name="name">POPSK Jadavpur</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Jalpaiguri" model="office.address">
+            <field name="name">POPSK Jalpaiguri</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Jhargram" model="office.address">
+            <field name="name">POPSK Jhargram</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Jiyaganj" model="office.address">
+            <field name="name">POPSK Jiyaganj</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Kakdweep" model="office.address">
+            <field name="name">POPSK Kakdweep</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Katwa" model="office.address">
+            <field name="name">POPSK Katwa</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Kharagpur" model="office.address">
+            <field name="name">POPSK Kharagpur</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Krishnanagar" model="office.address">
+            <field name="name">POPSK Krishnanagar</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Makdumpur" model="office.address">
+            <field name="name">POPSK Makdumpur</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Port_Blair" model="office.address">
+            <field name="name">POPSK Port Blair</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Purulia" model="office.address">
+            <field name="name">POPSK Purulia</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Raghunathganj" model="office.address">
+            <field name="name">POPSK Raghunathganj</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Raiganj" model="office.address">
+            <field name="name">POPSK Raiganj</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Rampurhat" model="office.address">
+            <field name="name">POPSK Rampurhat</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Ranaghat" model="office.address">
+            <field name="name">POPSK Ranaghat</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Samsi" model="office.address">
+            <field name="name">POPSK Samsi</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Serampore" model="office.address">
+            <field name="name">POPSK Serampore</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_POPSK_Tamluk" model="office.address">
+            <field name="name">POPSK Tamluk</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_PSLK_Agartala" model="office.address">
+            <field name="name">PSLK Agartala</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_PSLK_Gangtok" model="office.address">
+            <field name="name">PSLK Gangtok</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <record id="center_type_PSLK_Siliguri" model="office.address">
+            <field name="name">PSLK Siliguri</field>
+            <field name="city_id" ref="city_kolkata" />
+        </record>
+        <!-- Kota Center -->
+        <record id="center_type_PSK_Udaipur_II" model="office.address">
+            <field name="name">PSK Udaipur II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_RPO_Kota" model="office.address">
+            <field name="name">RPO Kota</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Banswara_II" model="office.address">
+            <field name="name">POPSK Banswara II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Bhilwara_II" model="office.address">
+            <field name="name">POPSK Bhilwara II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Chittorgarh_II" model="office.address">
+            <field name="name">POPSK Chittorgarh II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Jhalawar_II" model="office.address">
+            <field name="name">POPSK Jhalawar II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Kankroli_II" model="office.address">
+            <field name="name">POPSK Kankroli II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Kota_II" model="office.address">
+            <field name="name">POPSK Kota II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Pratapgarh_II" model="office.address">
+            <field name="name">POPSK Pratapgarh II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_POPSK_Sawai_Madhopur_II" model="office.address">
+            <field name="name">POPSK Sawai Madhopur II</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <record id="center_type_Passport_Front_Office_Kota" model="office.address">
+            <field name="name">Passport Front Office Kota</field>
+            <field name="city_id" ref="city_kota" />
+        </record>
+        <!-- Kozhikode Center -->
+        <record id="center_type_PSK_Kannur" model="office.address">
+            <field name="name">PSK Kannur</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <record id="center_type_PSK_Kozhikode" model="office.address">
+            <field name="name">PSK Kozhikode</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <record id="center_type_PSK_Malappuram_II" model="office.address">
+            <field name="name">PSK Malappuram II</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <record id="center_type_PSK_Payyanur_Kannur" model="office.address">
+            <field name="name">PSK Payyanur, Kannur</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <record id="center_type_PSK_Vadakara_Kozhikode" model="office.address">
+            <field name="name">PSK Vadakara, Kozhikode</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <record id="center_type_POPSK_Kasargod" model="office.address">
+            <field name="name">POPSK Kasargod</field>
+            <field name="city_id" ref="city_kozhikode" />
+        </record>
+        <!-- Lucknow Center -->
+        <record id="center_type_PSK_Gorakhpur" model="office.address">
+            <field name="name">PSK Gorakhpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_PSK_Kanpur" model="office.address">
+            <field name="name">PSK Kanpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_PSK_Lucknow" model="office.address">
+            <field name="name">PSK Lucknow</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_PSK_Varanasi" model="office.address">
+            <field name="name">PSK Varanasi</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_RPO_Lucknow" model="office.address">
+            <field name="name">RPO Lucknow</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Allahabad" model="office.address">
+            <field name="name">POPSK Allahabad</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Ambedkar_Nagar" model="office.address">
+            <field name="name">POPSK Ambedkar Nagar</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Amethi" model="office.address">
+            <field name="name">POPSK Amethi</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Ayodhya" model="office.address">
+            <field name="name">POPSK Ayodhya</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Azamgarh" model="office.address">
+            <field name="name">POPSK Azamgarh</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Bahraich" model="office.address">
+            <field name="name">POPSK Bahraich</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Ballia" model="office.address">
+            <field name="name">POPSK Ballia</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Balrampur" model="office.address">
+            <field name="name">POPSK Balrampur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Banda" model="office.address">
+            <field name="name">POPSK Banda</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Chunar" model="office.address">
+            <field name="name">POPSK Chunar</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Deoria" model="office.address">
+            <field name="name">POPSK Deoria</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Etawah" model="office.address">
+            <field name="name">POPSK Etawah</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Farrukhabad" model="office.address">
+            <field name="name">POPSK Farrukhabad</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Fatehpur" model="office.address">
+            <field name="name">POPSK Fatehpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Ghazipur" model="office.address">
+            <field name="name">POPSK Ghazipur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Gonda" model="office.address">
+            <field name="name">POPSK Gonda</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Hamirpur" model="office.address">
+            <field name="name">POPSK Hamirpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Hardoi" model="office.address">
+            <field name="name">POPSK Hardoi</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Jalaun" model="office.address">
+            <field name="name">POPSK Jalaun</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Jaunpur" model="office.address">
+            <field name="name">POPSK Jaunpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Jhansi" model="office.address">
+            <field name="name">POPSK Jhansi</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Lakhimpur_Kheri" model="office.address">
+            <field name="name">POPSK Lakhimpur Kheri</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Maharajganj" model="office.address">
+            <field name="name">POPSK Maharajganj</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Mau" model="office.address">
+            <field name="name">POPSK Mau</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Misrikh" model="office.address">
+            <field name="name">POPSK Misrikh</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Pratapgarh_UP" model="office.address">
+            <field name="name">POPSK Pratapgarh UP</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Raebareli" model="office.address">
+            <field name="name">POPSK Raebareli</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Siddharth_Nagar" model="office.address">
+            <field name="name">POPSK Siddharth Nagar</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Sitapur" model="office.address">
+            <field name="name">POPSK Sitapur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Sultanpur" model="office.address">
+            <field name="name">POPSK Sultanpur</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <record id="center_type_POPSK_Unnao" model="office.address">
+            <field name="name">POPSK Unnao</field>
+            <field name="city_id" ref="city_lucknow" />
+        </record>
+        <!-- Madurai Center -->
+        <record id="center_type_PSK_Madurai" model="office.address">
+            <field name="name">PSK Madurai</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_PSK_Tirunelveli_City" model="office.address">
+            <field name="name">PSK Tirunelveli City</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Bodineyaknur" model="office.address">
+            <field name="name">POPSK Bodineyaknur</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Devakottai" model="office.address">
+            <field name="name">POPSK Devakottai</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Kodai_Road" model="office.address">
+            <field name="name">POPSK Kodai Road</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Nagercoil" model="office.address">
+            <field name="name">POPSK Nagercoil</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Rajapalayam" model="office.address">
+            <field name="name">POPSK Rajapalayam</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Ramanathapuram" model="office.address">
+            <field name="name">POPSK Ramanathapuram</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Thoothukkudi" model="office.address">
+            <field name="name">POPSK Thoothukkudi</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <record id="center_type_POPSK_Virudhunagar" model="office.address">
+            <field name="name">POPSK Virudhunagar</field>
+            <field name="city_id" ref="city_madurai" />
+        </record>
+        <!-- Mumbai Center -->
+        <record id="center_type_PSK_Andheri" model="office.address">
+            <field name="name">PSK Andheri</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_PSK_Lower_Parel" model="office.address">
+            <field name="name">PSK Lower Parel</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_PSK_Malad" model="office.address">
+            <field name="name">PSK Malad</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_PSK_Nashik_II" model="office.address">
+            <field name="name">PSK Nashik II</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_PSK_Thane_II" model="office.address">
+            <field name="name">PSK Thane II</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_RPO_Mumbai" model="office.address">
+            <field name="name">RPO Mumbai</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Alibag" model="office.address">
+            <field name="name">POPSK Alibag</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Aurangabad_Maharashtra" model="office.address">
+            <field name="name">POPSK Aurangabad, Maharashtra</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Bhiwandi" model="office.address">
+            <field name="name">POPSK Bhiwandi</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Bhusawal" model="office.address">
+            <field name="name">POPSK Bhusawal</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Daman" model="office.address">
+            <field name="name">POPSK Daman</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Dhule" model="office.address">
+            <field name="name">POPSK Dhule</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Dombivli" model="office.address">
+            <field name="name">POPSK Dombivli</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Jalgaon" model="office.address">
+            <field name="name">POPSK Jalgaon</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Nandurbar" model="office.address">
+            <field name="name">POPSK Nandurbar</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Rajapur" model="office.address">
+            <field name="name">POPSK Rajapur</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Santacruz" model="office.address">
+            <field name="name">POPSK Santacruz</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Silvasa" model="office.address">
+            <field name="name">POPSK Silvasa</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Sion" model="office.address">
+            <field name="name">POPSK Sion</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Vasai" model="office.address">
+            <field name="name">POPSK Vasai</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Vashi" model="office.address">
+            <field name="name">POPSK Vashi</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <record id="center_type_POPSK_Vikroli" model="office.address">
+            <field name="name">POPSK Vikroli</field>
+            <field name="city_id" ref="city_mumbai" />
+        </record>
+        <!-- Nagpur Center -->
+        <record id="center_type_PSK_Nagpur" model="office.address">
+            <field name="name">PSK Nagpur</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_RPO_Nagpur" model="office.address">
+            <field name="name">RPO Nagpur</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Akola" model="office.address">
+            <field name="name">POPSK Akola</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Amravati" model="office.address">
+            <field name="name">POPSK Amravati</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Bhandara" model="office.address">
+            <field name="name">POPSK Bhandara</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Buldhana" model="office.address">
+            <field name="name">POPSK Buldhana</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Chandrapur" model="office.address">
+            <field name="name">POPSK Chandrapur</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Gadchiroli" model="office.address">
+            <field name="name">POPSK Gadchiroli</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Hingoli" model="office.address">
+            <field name="name">POPSK Hingoli</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Katol" model="office.address">
+            <field name="name">POPSK Katol</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Wardha" model="office.address">
+            <field name="name">POPSK Wardha</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <record id="center_type_POPSK_Yavatmal" model="office.address">
+            <field name="name">POPSK Yavatmal</field>
+            <field name="city_id" ref="city_nagpur" />
+        </record>
+        <!-- Patna Center -->
+        <record id="center_type_PSK_Patna" model="office.address">
+            <field name="name">PSK Patna</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_RPO_Patna" model="office.address">
+            <field name="name">RPO Patna</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_RPO_Van_Siwan" model="office.address">
+            <field name="name">RPO Van Siwan</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Arrah" model="office.address">
+            <field name="name">POPSK Arrah</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Aurangabad_Bihar" model="office.address">
+            <field name="name">POPSK Aurangabad, Bihar</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Banka" model="office.address">
+            <field name="name">POPSK Banka</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Begusarai" model="office.address">
+            <field name="name">POPSK Begusarai</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Bettiah" model="office.address">
+            <field name="name">POPSK Bettiah</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Bhagalpur" model="office.address">
+            <field name="name">POPSK Bhagalpur</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Buxar" model="office.address">
+            <field name="name">POPSK Buxar</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Chapra" model="office.address">
+            <field name="name">POPSK Chapra</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Dalmianagar" model="office.address">
+            <field name="name">POPSK Dalmianagar</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Dalsingsarai" model="office.address">
+            <field name="name">POPSK Dalsingsarai</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Ekmaa" model="office.address">
+            <field name="name">POPSK Ekmaa</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Forbesganj" model="office.address">
+            <field name="name">POPSK Forbesganj</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Gaya" model="office.address">
+            <field name="name">POPSK Gaya</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Gopalganj" model="office.address">
+            <field name="name">POPSK Gopalganj</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Hajipur" model="office.address">
+            <field name="name">POPSK Hajipur</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Jahanabad" model="office.address">
+            <field name="name">POPSK Jahanabad</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Jamui" model="office.address">
+            <field name="name">POPSK Jamui</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Katihar" model="office.address">
+            <field name="name">POPSK Katihar</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Khagadia" model="office.address">
+            <field name="name">POPSK Khagadia</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Kishanganj" model="office.address">
+            <field name="name">POPSK Kishanganj</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Madhubani" model="office.address">
+            <field name="name">POPSK Madhubani</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Maner" model="office.address">
+            <field name="name">POPSK Maner</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Motihari" model="office.address">
+            <field name="name">POPSK Motihari</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Munger" model="office.address">
+            <field name="name">POPSK Munger</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Muzaffarpur" model="office.address">
+            <field name="name">POPSK Muzaffarpur</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Nalanda" model="office.address">
+            <field name="name">POPSK Nalanda</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Nawada" model="office.address">
+            <field name="name">POPSK Nawada</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Purnia" model="office.address">
+            <field name="name">POPSK Purnia</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Saharsa" model="office.address">
+            <field name="name">POPSK Saharsa</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Samastipur" model="office.address">
+            <field name="name">POPSK Samastipur</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Sasaram" model="office.address">
+            <field name="name">POPSK Sasaram</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Sheohar" model="office.address">
+            <field name="name">POPSK Sheohar</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Sitamarhi" model="office.address">
+            <field name="name">POPSK Sitamarhi</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Siwan" model="office.address">
+            <field name="name">POPSK Siwan</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_POPSK_Supaul" model="office.address">
+            <field name="name">POPSK Supaul</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <record id="center_type_PSLK_Darbhanga" model="office.address">
+            <field name="name">PSLK Darbhanga</field>
+            <field name="city_id" ref="city_patna" />
+        </record>
+        <!-- Pune Center -->
+        <record id="center_type_PSK_Pune" model="office.address">
+            <field name="name">PSK Pune</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_PSK_Solapur" model="office.address">
+            <field name="name">PSK Solapur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_RPO_Pune" model="office.address">
+            <field name="name">RPO Pune</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Ahmednagar" model="office.address">
+            <field name="name">POPSK Ahmednagar</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Baramati" model="office.address">
+            <field name="name">POPSK Baramati</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Beed" model="office.address">
+            <field name="name">POPSK Beed</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Dharashiv" model="office.address">
+            <field name="name">POPSK Dharashiv</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Ichalkaranji" model="office.address">
+            <field name="name">POPSK Ichalkaranji</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Jalna" model="office.address">
+            <field name="name">POPSK Jalna</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Kolhapur" model="office.address">
+            <field name="name">POPSK Kolhapur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Latur" model="office.address">
+            <field name="name">POPSK Latur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Madha" model="office.address">
+            <field name="name">POPSK Madha</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Nanded" model="office.address">
+            <field name="name">POPSK Nanded</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Pandharpur" model="office.address">
+            <field name="name">POPSK Pandharpur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Parbhani" model="office.address">
+            <field name="name">POPSK Parbhani</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Pimpri_Chinchwad" model="office.address">
+            <field name="name">POPSK Pimpri Chinchwad</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Sangli" model="office.address">
+            <field name="name">POPSK Sangli</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Satara" model="office.address">
+            <field name="name">POPSK Satara</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Shirur" model="office.address">
+            <field name="name">POPSK Shirur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <record id="center_type_POPSK_Shrirampur" model="office.address">
+            <field name="name">POPSK Shrirampur</field>
+            <field name="city_id" ref="city_pune" />
+        </record>
+        <!-- Raipur Center -->
+        <record id="center_type_PSK_Raipur" model="office.address">
+            <field name="name">PSK Raipur</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_RPO_Raipur" model="office.address">
+            <field name="name">RPO Raipur</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Bastar" model="office.address">
+            <field name="name">POPSK Bastar</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Bilaspur" model="office.address">
+            <field name="name">POPSK Bilaspur</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Durg" model="office.address">
+            <field name="name">POPSK Durg</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Janjgir_Champa" model="office.address">
+            <field name="name">POPSK Janjgir-Champa</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Kanker" model="office.address">
+            <field name="name">POPSK Kanker</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Korba" model="office.address">
+            <field name="name">POPSK Korba</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Raigarh" model="office.address">
+            <field name="name">POPSK Raigarh</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Rajnandgaon" model="office.address">
+            <field name="name">POPSK Rajnandgaon</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <record id="center_type_POPSK_Surguja" model="office.address">
+            <field name="name">POPSK Surguja</field>
+            <field name="city_id" ref="city_raipur" />
+        </record>
+        <!-- Ranchi Center -->
+        <record id="center_type_PSK_Ranchi" model="office.address">
+            <field name="name">PSK Ranchi</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_RPO_Ranchi" model="office.address">
+            <field name="name">RPO Ranchi</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Bokaro" model="office.address">
+            <field name="name">POPSK Bokaro</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Chaibasa" model="office.address">
+            <field name="name">POPSK Chaibasa</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Deoghar" model="office.address">
+            <field name="name">POPSK Deoghar</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Dhanbad" model="office.address">
+            <field name="name">POPSK Dhanbad</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Dumka" model="office.address">
+            <field name="name">POPSK Dumka</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Giridih" model="office.address">
+            <field name="name">POPSK Giridih</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Godda" model="office.address">
+            <field name="name">POPSK Godda</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Gumla" model="office.address">
+            <field name="name">POPSK Gumla</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Hazaribagh" model="office.address">
+            <field name="name">POPSK Hazaribagh</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Jamshedpur" model="office.address">
+            <field name="name">POPSK Jamshedpur</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Jhumri_Tilaiya" model="office.address">
+            <field name="name">POPSK Jhumri Tilaiya</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Khunti" model="office.address">
+            <field name="name">POPSK Khunti</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Medininagar" model="office.address">
+            <field name="name">POPSK Medininagar</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Sahibganj" model="office.address">
+            <field name="name">POPSK Sahibganj</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_POPSK_Simaria" model="office.address">
+            <field name="name">POPSK Simaria</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <record id="center_type_Van_1_Jamshedpur_JH01FH5345" model="office.address">
+            <field name="name">Van-1 Jamshedpur JH01FH5345</field>
+            <field name="city_id" ref="city_ranchi" />
+        </record>
+        <!-- Shimla Center -->
+        <record id="center_type_PSK_Shimla" model="office.address">
+            <field name="name">PSK Shimla</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_RPO_Shimla" model="office.address">
+            <field name="name">RPO Shimla</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Hamirpur_HP" model="office.address">
+            <field name="name">POPSK Hamirpur, HP</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Kangra" model="office.address">
+            <field name="name">POPSK Kangra</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Kullu" model="office.address">
+            <field name="name">POPSK Kullu</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Mandi" model="office.address">
+            <field name="name">POPSK Mandi</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Palampur" model="office.address">
+            <field name="name">POPSK Palampur</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <record id="center_type_POPSK_Una" model="office.address">
+            <field name="name">POPSK Una</field>
+            <field name="city_id" ref="city_shimla" />
+        </record>
+        <!-- Srinagar Center -->
+        <record id="center_type_PSK_Srinagar" model="office.address">
+            <field name="name">PSK Srinagar</field>
+            <field name="city_id" ref="city_srinagar" />
+        </record>
+        <record id="center_type_POPSK_Anantnag" model="office.address">
+            <field name="name">POPSK Anantnag</field>
+            <field name="city_id" ref="city_srinagar" />
+        </record>
+        <record id="center_type_POPSK_Baramulla" model="office.address">
+            <field name="name">POPSK Baramulla</field>
+            <field name="city_id" ref="city_srinagar" />
+        </record>
+        <record id="center_type_POPSK_Leh" model="office.address">
+            <field name="name">POPSK Leh</field>
+            <field name="city_id" ref="city_srinagar" />
+        </record>
+        <!-- Tiruchirappalli Center -->
+        <record id="center_type_PSK_Thanjavur" model="office.address">
+            <field name="name">PSK Thanjavur</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_PSK_Tiruchirappalli" model="office.address">
+            <field name="name">PSK Tiruchirappalli</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_RPO_Tiruchirappalli" model="office.address">
+            <field name="name">RPO Tiruchirappalli</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_POPSK_Karaikal" model="office.address">
+            <field name="name">POPSK Karaikal</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_POPSK_Karur" model="office.address">
+            <field name="name">POPSK Karur</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_POPSK_Perambalur" model="office.address">
+            <field name="name">POPSK Perambalur</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_POPSK_Sirkali" model="office.address">
+            <field name="name">POPSK Sirkali</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+        <record id="center_type_POPSK_Thiruthuraipoondi" model="office.address">
+            <field name="name">POPSK Thiruthuraipoondi</field>
+            <field name="city_id" ref="city_tiruchirappalli" />
+        </record>
+    <!-- Trivandrum Center -->
+        <record id="center_type_PSK_Kollam" model="office.address">
+            <field name="name">PSK Kollam</field>
+            <field name="city_id" ref="city_trivandrum" />
+        </record>
+        <record id="center_type_PSK_Neyyattinkara" model="office.address">
+            <field name="name">PSK Neyyattinkara</field>
+            <field name="city_id" ref="city_trivandrum" />
+        </record>
+        <record id="center_type_PSK_Vazhuthacaud" model="office.address">
+            <field name="name">PSK Vazhuthacaud</field>
+            <field name="city_id" ref="city_trivandrum" />
+        </record>
+        <record id="center_type_POPSK_Attingal" model="office.address">
+            <field name="name">POPSK Attingal</field>
+            <field name="city_id" ref="city_trivandrum" />
+        </record>
+        <record id="center_type_POPSK_Pathanamthitta" model="office.address">
+            <field name="name">POPSK Pathanamthitta</field>
+            <field name="city_id" ref="city_trivandrum" />
+        </record>
+        <!-- Vijayawada Center -->
+        <record id="center_type_PSK_Tirupathi_II" model="office.address">
+            <field name="name">PSK Tirupathi II</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_PSK_Vijaywada_II" model="office.address">
+            <field name="name">PSK Vijaywada II</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_RPO_Vijaywada" model="office.address">
+            <field name="name">RPO Vijaywada</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Anantapur" model="office.address">
+            <field name="name">POPSK Anantapur</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Bapatla" model="office.address">
+            <field name="name">POPSK Bapatla</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Chittoor" model="office.address">
+            <field name="name">POPSK Chittoor</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Gudivada" model="office.address">
+            <field name="name">POPSK Gudivada</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Guntur" model="office.address">
+            <field name="name">POPSK Guntur</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Hindupur" model="office.address">
+            <field name="name">POPSK Hindupur</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Kadapa" model="office.address">
+            <field name="name">POPSK Kadapa</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Kodur" model="office.address">
+            <field name="name">POPSK Kodur</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Kurnool" model="office.address">
+            <field name="name">POPSK Kurnool</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Nandyal" model="office.address">
+            <field name="name">POPSK Nandyal</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Narasaraopet" model="office.address">
+            <field name="name">POPSK Narasaraopet</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Nellore" model="office.address">
+            <field name="name">POPSK Nellore</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <record id="center_type_POPSK_Ongole" model="office.address">
+            <field name="name">POPSK Ongole</field>
+            <field name="city_id" ref="city_vijayawada" />
+        </record>
+        <!-- Visakhapatnam Center -->
+        <record id="center_type_PSK_Visakhapatnam" model="office.address">
+            <field name="name">PSK Visakhapatnam</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_RPO_Visakhapatnam" model="office.address">
+            <field name="name">RPO Visakhapatnam</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Amalapuram" model="office.address">
+            <field name="name">POPSK Amalapuram</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Eluru" model="office.address">
+            <field name="name">POPSK Eluru</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Kakinada" model="office.address">
+            <field name="name">POPSK Kakinada</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Rajamundry" model="office.address">
+            <field name="name">POPSK Rajamundry</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Srikakulam" model="office.address">
+            <field name="name">POPSK Srikakulam</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Vizianagaram" model="office.address">
+            <field name="name">POPSK Vizianagaram</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_POPSK_Yelamanchili" model="office.address">
+            <field name="name">POPSK Yelamanchili</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+        <record id="center_type_PSLK_Bhimavaram" model="office.address">
+            <field name="name">PSLK Bhimavaram</field>
+            <field name="city_id" ref="city_visakhapatnam" />
+        </record>
+    </data>
+
+</odoo>

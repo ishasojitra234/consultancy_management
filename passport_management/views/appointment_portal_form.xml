@@ -1,0 +1,220 @@
+<odoo>
+    <template id="appointment_list_view_portal" name="Appointment Portal View">
+        <t t-call="portal.portal_layout">
+            <div style="margin-top: 20px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h2 style="color: #002D72; text-align: center; margin-bottom: 20px;">My Appointments</h2>
+                <a href="/new/appointment" class="btn btn-primary" style="background-color: #002D72; color: white; padding: 10px 20px; border: none; border-radius: 4px;">
+                    New Appointment
+                </a>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table">
+                    <thead>
+                        <tr style="background-color: #002D72; color: white; text-align: center; padding: 10px;">
+                            <th>SR NO</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Booking Date</th>
+                            <th>Service</th>
+                            <th>Service Type</th>
+                            <th>Service Charge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="appointment_ids" t-as="appointment">
+                            <tr style="border-bottom: 1px solid #ddd; text-align: center; padding: 8px;">
+                                <td>
+                                    <a t-attf-href="/appointment/form" >
+                                        <t t-esc="appointment.name" />
+                                    </a>
+                                </td>
+                                <td><t t-esc="appointment.first_name" /></td>
+                                <td><t t-esc="appointment.last_name" /></td>
+                                <td><t t-esc="appointment.email" /></td>
+                                <td><t t-esc="appointment.booking_date.strftime('%d/%m/%Y')" /></td>
+                                <td><t t-esc="appointment.service_master_id.name" /></td>
+                                <td><t t-esc="appointment.service_type_id.name" /></td>
+                                <td><t t-esc="appointment.fees_amount" /></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+    <template id="portal_appointment_form" name="Appointment Portal View">
+        <t t-call="portal.portal_layout">
+            <div class="appointment-container" style="margin-top: 20px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h2 class="heading" style="color: #002D72; text-align: center; margin-bottom: 20px;">Appointment Details</h2>
+                
+                <!-- Appointment Details Container -->
+                <div class="details-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <t t-if="appointment">
+                        <!-- Personal Information Section -->
+                        <div class="personal-info">
+                            <h3 class="section-heading" style="color: #002D72; margin-bottom: 10px;">Personal Information</h3>
+                            <div class="personal-info-details" style="margin-bottom: 10px;">
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">First Name:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.first_name" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Last Name:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.last_name" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Gender:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.gender" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Date of Birth:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.date_of_birth" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Nationality:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.nationality" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information Section -->
+                        <div class="contact-info">
+                            <h3 class="section-heading" style="color: #002D72; margin-bottom: 10px;">Contact Information</h3>
+                            <div class="contact-info-details" style="margin-bottom: 10px;">
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Email:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.email" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Phone Number:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.phone" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Aadhar Number:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.aadhar_number" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">PAN Number:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.pan_number" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Address:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;">
+                                        <t t-esc="', '.join([appointment.street1 or '', appointment.street2 or '', appointment.city_id.name or '', appointment.state_id.name or '', appointment.country_id.name or ''])" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Appointment Details Section -->
+                        <div class="appointment-info">
+                            <h3 class="section-heading" style="color: #002D72; margin-bottom: 10px;">Appointment Details</h3>
+                            <div class="appointment-details" style="margin-bottom: 20px;">
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Service:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.service_master_id.name" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Service Type:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.service_type_id.name" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Appointment Booking Date:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.booking_date" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">AR Number:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.ar_number" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">File Number:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.file_number" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Appointment Related details Section -->
+                        <div class="other-appointment-info">
+                            <h3 class="section-heading" style="color: #002D72; margin-bottom: 10px;">Appointment Details</h3>
+                            <div class="other-appointment-details" style="margin-bottom: 20px;">
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Passport Type:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.passport_type" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">City Type:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.passport_city_id" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Passport Address:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.office_address_id" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Appointment Verification Date:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.verification_date" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Details Section -->
+                        <div class="payment-info">
+                            <h3 class="section-heading" style="color: #002D72; margin-bottom: 10px;">Payment Details</h3>
+                            <div class="payment-details" style="margin-bottom: 20px;">
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Paid Amount:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.paid_amount" /></div>
+                                </div>
+                                <div class="field-row" style="display: flex; margin-bottom: 10px;">
+                                    <div class="field-label" style="flex: 1; font-weight: bold; padding-right: 10px; font-size: 18px;">Due Amount:</div>
+                                    <div class="field-value" style="flex: 2; font-size: 18px;"><span t-field="appointment.due_amount" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="no-details" style="text-align: center; padding: 20px; font-size: 20px;">No appointment details available.</div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_new_appointment_form" name="New Appointment Portal Form">
+        <t t-call="portal.portal_layout">
+            <div style="margin-top: 20px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h2 style="color: #002D72; text-align: center; margin-bottom: 20px;">Book a New Appointment</h2>
+                <form action="/create/appointment" method="post">
+                    <div style="margin-bottom: 20px;">
+                        <label for="first_name" style="display: block; margin-bottom: 5px;">First Name</label>
+                        <input type="text" name="first_name" id="first_name" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"/>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="last_name" style="display: block; margin-bottom: 5px;">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" />
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" />
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="mobile" style="display: block; margin-bottom: 5px;">Phone Number</label>
+                        <input type="text" name="mobile" id="mobile" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" />
+                    </div>
+                   <div style="margin-bottom: 20px;">
+                        <label for="service" style="display: block; margin-bottom: 5px;">Service</label>
+                        <select name="service_id" id="service" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="" disabled="true" selected="true">Select a Service</option>
+                            <t t-foreach="services" t-as="service">
+                                <option t-att-value="service.id"><t t-esc="service.name" /></option>
+                            </t>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="date" style="display: block; margin-bottom: 5px;">Appointment Date</label>
+                        <input type="date" name="appointment_date" id="date" class="form-control" required="true" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" />
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #002D72; color: white; padding: 10px 20px; border: none; border-radius: 4px;">Submit</button>
+                </form>
+            </div>
+        </t>
+    </template>
+</odoo>

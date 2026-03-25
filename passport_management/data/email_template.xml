@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="email_template_appointment_status" model="mail.template">
+            <field name="name">Customer Email Status Template</field>
+            <field name="model_id" ref="passport_management.model_appointment_appointment"/>
+            <field name="subject">Customer Notification</field>
+            <field name="email_from">${object.company_id.email or 'passpoter@gmail.com'}</field>
+            <field name="email_to">${object.customer_id.email}</field>
+            <field name="body_html">
+                <![CDATA[
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">Dear <strong><span t-out="object.customer_id.name"/></strong>,</p></br>
+                    <p>We hope this email finds you well.</p>
+                    <p>We are writing to inform you that your Document Verification has been scheduled.</p>
+                    <p>Details of the Verification Appointment:</p>
+                    <p>Date:<strong> <span t-out="object.verification_date.strftime('%d/%m/%Y')" /></strong></p>
+                    <!-- <p>Time:<strong> <span t-out="object.verification_date.strftime('%d/%m/%Y')"/></strong></p> -->
+<!-- <p>Required Documents:</p>
+                    <ul>
+                        <t t-foreach="object.doucument_ids" t-as="document">
+                            <strong><li><t t-esc="document.name"/></li></strong>
+                        </t>
+                    </ul> -->
+
+<p>If you need to reschedule your verification or have any further questions, please feel free to contact us at  <strong><span t-out="object.company_id.email"/></strong> or  <strong><span t-out="object.company_id.phone"/></strong>.</p>
+<p>We look forward to assisting you with your verification process. Please ensure that you arrive promptly for your appointment.</p>
+<p>Thank you for choosing <strong><span t-out="object.company_id.email"/></strong>.</p>
+<p><strong>Best regards</strong>,</p>
+<p><t t-out="object.company_id.name" /></p>
+<p>Link – <a href="#">Your verification link here</a></p>
+</div>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</odoo>
